@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talento Emprendedor | Hacia tu Libertad Personal</title>
+    <meta name="description" content="Talento Emprendedor: emprendimiento, liderazgo consciente y libertad personal. Solo para personas dispuestas a construir.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #0b0b0b;
+            --accent: #d4af37;
+            --text-dark: #1a1a1a;
+            --text-muted: #666666;
+            --bg-light: #f9f9f9;
+            --white: #ffffff;
+            --transition: all 0.3s ease;
+        }
+
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--white);
+            line-height: 1.7;
+            scroll-behavior: smooth;
+        }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+        .section-padding { padding: 100px 0; }
+        .text-center { text-align: center; }
+
+        /* Navegación */
+        nav {
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+            position: sticky;
+            top: 0;
+            background: rgba(255,255,255,0.9);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+        .nav-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: 800; letter-spacing: 1px; font-size: 1.1rem; text-decoration: none; color: var(--primary); }
+
+        /* Hero */
+        .hero {
+            padding: 140px 0 80px;
+            background: radial-gradient(circle at top right, #fdfdfd, #f3f3f3);
+        }
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 3.8rem);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+        .hero p.lead { font-size: 1.2rem; color: var(--text-muted); max-width: 650px; margin-bottom: 40px; }
+
+        .anchor-box {
+            border-left: 5px solid var(--primary);
+            padding: 30px;
+            background: var(--white);
+            box-shadow: 15px 15px 40px rgba(0,0,0,0.05);
+            margin: 40px 0;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        /* Botones */
+        .btn {
+            display: inline-block;
+            padding: 18px 36px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            text-align: center;
+        }
+        .btn-dark { background: var(--primary); color: var(--white); }
+        .btn-dark:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); opacity: 0.9; }
+        .btn-outline { border: 2px solid var(--primary); color: var(--primary); margin-left: 10px; }
+        .btn-outline:hover { background: var(--primary); color: var(--white); }
+
+        /* Comparativa */
+        .comparison { background: var(--bg-light); border-radius: 12px; overflow: hidden; display: flex; flex-wrap: wrap; margin-top: 40px; }
+        .comp-box { flex: 1; min-width: 300px; padding: 60px 40px; }
+        .comp-no { background: #fff; }
+        .comp-yes { background: var(--primary); color: var(--white); }
+        .comp-yes h2 { color: var(--white); }
+        
+        ul { list-style: none; padding: 0; }
+        li { margin-bottom: 15px; display: flex; align-items: flex-start; }
+        li i { margin-right: 12px; margin-top: 5px; }
+        .comp-no i { color: #e74c3c; }
+        .comp-yes i { color: #2ecc71; }
+
+        footer { padding: 60px 0; background: var(--white); border-top: 1px solid #eee; text-align: center; }
+
+        @media (max-width: 768px) {
+            .btn { width: 100%; margin-left: 0 !important; margin-bottom: 10px; }
+            .section-padding { padding: 60px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="container nav-content">
+            <a href="#" class="logo">TALENTO EMPRENDEDOR</a>
+            <a href="tel:+34667742309" style="text-decoration:none; color:var(--primary); font-weight:600; font-size: 0.9rem;">
+                <i class="fa-solid fa-phone"></i> +34 667 742 309
+            </a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Emprendimiento y <br>desarrollo humano.</h1>
+            <p class="lead">Talento Emprendedor no es para todo el mundo. Es para quienes han decidido dejar de ser espectadores de su propia vida.</p>
+            
+            <div class="anchor-box">
+                "Si otros deciden por ti, cierra esto. Solo para personas dispuestas a actuar y construir libertad personal."
+            </div>
+
+            <div style="margin-top: 40px;">
+                <a href="tel:+34667742309" class="btn btn-dark">Llamar ahora <i class="fa-solid fa-phone" style="margin-left:10px"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="container section-padding">
+        <div style="max-width: 800px;">
+            <h2 style="font-size: 2.2rem;">¿Qué es Talento Emprendedor?</h2>
+            <p style="font-size: 1.1rem; color: var(--text-muted);">
+                Somos una comunidad de mentores con más de <strong>30 años de experiencia</strong> transformando personas a través del emprendimiento, el liderazgo consciente y la educación financiera.
+            </p>
+            <p style="font-size: 1.1rem; color: var(--text-muted);">
+                No vendemos atajos ni fórmulas mágicas. Construimos procesos. Aquí se viene a aprender, a asumir la responsabilidad total de tus resultados y a generar prosperidad desde la ética.
+            </p>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="comparison">
+                <div class="comp-box comp-no">
+                    <h2 style="margin-top:0">Esto NO es para ti si...</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-circle-xmark"></i> Buscas dinero rápido sin compromiso.</li>
+                        <li><i class="fa-solid fa-circle-xmark"></i> Necesitas que te digan constantemente qué hacer.</li>
+                        <li><i class="fa-solid fa-circle-xmark"></i> Culpas al sistema, al jefe o a la suerte.</li>
+                        <li><i class="fa-solid fa-circle-xmark"></i> No estás dispuesto a formarte ni a liderarte.</li>
+                    </ul>
+                </div>
+                <div class="comp-box comp-yes">
+                    <h2 style="margin-top:0">Esto SÍ es para ti si...</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-circle-check"></i> Quieres independencia económica real.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Entiendes que la libertad se construye con esfuerzo.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Buscas mentoría ética y relaciones ganar-ganar.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Estás dispuesto a pensar y actuar diferente.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container section-padding text-center">
+        <h2 style="font-size: 2rem; margin-bottom: 30px;">Mi convicción</h2>
+        <div style="font-size: 1.4rem; font-style: italic; max-width: 850px; margin: 0 auto; color: var(--text-dark);">
+            "La libertad no se otorga. Se construye. Cuando dependes de otros para vivir, otros deciden por ti. Hacerlo acompañado de personas con valores lo cambia todo."
+        </div>
+        <p style="margin-top: 40px; font-weight: 800; color: var(--accent); letter-spacing: 2px; text-transform: uppercase;">
+            💎 Hacia la libertad personal 💎
+        </p>
+    </section>
+
+    <section class="section-padding" style="background: var(--primary); color: white;">
+        <div class="container text-center">
+            <h2 style="color: white; font-size: 2.2rem;">¿Te unirías al reto?</h2>
+            <p style="max-width: 600px; margin: 0 auto 40px; opacity: 0.9;">
+                Si has llegado hasta aquí, probablemente no seas una persona promedio. El siguiente paso no es informarte más, es conversar para ver si encajamos.
+            </p>
+            
+            <a href="tel:+34667742309" class="btn btn-dark" style="background:white; color:black;">Llamar al teléfono</a>
+            <a href="mailto:jba.bcn@gmail.com" class="btn btn-outline" style="border-color:white; color:white;">Escríbeme por email</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div style="font-weight: 800; margin-bottom: 10px;">TALENTO EMPRENDEDOR</div>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">© Jose Barragán — Barcelona</p>
+        </div>
+    </footer>
+
+</body>
+</html>
